@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media(min-width: 767px) {
+    body {
+        margin: 80px auto;
+        max-width: 600px;
+        min-width: 360px;
+    }
+	main {
+		padding: 10px 50px;
+	}
+}
+
+@media(max-width: 766px) {
+    body {
+        margin: 20px;
+    }
+	main {
+		padding: 10px 0;
+	}
+}
+
+body {
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+}
+
+.footer {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.nav {
+    display: inline-flex;
+}
+
+.nav a {
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav a:hover{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(104, 136, 177);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+	background-color: #333;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	font-size: 18px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	text-decoration: dashed;
+}
+
+h1 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	padding: 10px;
+	border-radius: 10px;
+	border: none groove 1px;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #555;
+}
+
+.blogs {
+	display: block;
+	margin: 40px 0;
+	padding-left: 30px;
+	border-left:  6px solid crimson;
+	text-decoration: none;
+}
+
+.blogs a:hover h3 {
+	color: crimson;
+}

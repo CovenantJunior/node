@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h2>Welcome</h2>
+    <%- include('./partials/head.ejs') %> 
+    <body>
+        <%- include('./partials/nav.ejs') %> 
+
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <div class="blogs content">
+                    <h4 class="title"><%= blog.title %></h4>
+                    <p class="snippet"><%= blog.snippet %></p>
+                    <button onclick="location='<%= '/blog/'+blog._id %>'" class="read">Read Article</button>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <h2>No blogs to display right now. <a href="/blogs/create">Consider adding one</a>.</h2>
+        <% } %>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>

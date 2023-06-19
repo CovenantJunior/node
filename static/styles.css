@@ -28,6 +28,7 @@ body {
     line-height: 25px;
     text-align: justify;
     font-weight: 500;
+	color: #6888b1;
 }
 
 h2 {
@@ -65,7 +66,7 @@ input {
 }
 
 nav {
-	background-color: #333;
+	background-color: #4285F4;
 	height: 50px;
 	display: flex;
 	justify-content: center;
@@ -104,6 +105,11 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-size: 30px;
+	color: #6888b1;
+}
+
 form {
 	max-width: 500px;
 	margin: 0 auto;
@@ -125,10 +131,11 @@ textarea {
 	border: none groove 1px;
 	margin-bottom: 20px;
 	font-size: 16px;
+	border-color: #4285F4;
 }
 
 input[type="submit"] {
-	background-color: #333;
+	background-color: #4285F4;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -142,13 +149,33 @@ input[type="submit"]:hover {
 }
 
 .blogs {
-	display: block;
-	margin: 40px 0;
-	padding-left: 30px;
-	border-left:  6px solid crimson;
+	display: inline-block;
+	margin: 25px;
+	padding-left: 20px;
+	border-left:  6px solid #6888b1;
 	text-decoration: none;
 }
 
 .blogs a:hover h3 {
-	color: crimson;
+	color: #6888b1;
+}
+
+.click {
+	background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+	border-radius: 8px;
+	transition: all 1s;
+}
+
+.click:hover {
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }

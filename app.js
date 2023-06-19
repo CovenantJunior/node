@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
     // res.render('index', {title: "My Nodejs Course", blogs});
     Blog.find({}).sort({_id:-1})
     .then((result) => {
-        res.render('index', {title: "MongoDB", blogs : result});
+        res.render('index', {title: "Node is Great", blogs : result});
     })
     .catch((error) => console.log("Error :"+error));
 });

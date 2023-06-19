@@ -10,7 +10,7 @@
                 <div class="blogs content">
                     <h4 class="title"><%= blog.title %></h4>
                     <p class="snippet"><%= blog.snippet %></p>
-                    <button onclick="location='<%= '/blog/'+blog._id %>'" class="read">Read Article</button>
+                    <button class="click" onclick="location='<%= '/blog/'+blog._id %>'" class="read">Read Article</button>
                 </div>
             <% }) %>
         <% } else { %>
